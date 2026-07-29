@@ -1,0 +1,77 @@
+schema_version: 1
+profile: current_compatible
+
+model:
+  model_id: meta-llama/Llama-2-7b-hf
+  dtype: float16
+  backend: a100
+
+runtime:
+  batch_size: 1
+  context_length: 512
+  max_new_tokens: 512
+  warmup_steps: 10
+  measurement_steps: 1000
+  require_a100: true
+
+anchor:
+  gate_threshold: 0.85
+  drift_threshold: 0.15
+  max_chain: 3
+  approximation_error: 0.05
+  projection_dim: 128
+  gate_slope: 0.05
+  residual_blend: 0.1
+
+pruning:
+  high_threshold: 0.7
+  low_threshold: 0.3
+  window_fraction: 0.9
+  topk_fraction: 0.5
+  recency_weight: 0.3
+  deterministic: true
+  refresh_interval: 20
+  refresh_precision_changes: 4
+  refresh_error_sq: 0.1
+
+precision:
+  thresholds: [0.7, 0.5, 0.3]
+  group_size: 128
+  activation_quantization: false
+  resident_packs: [fp16_bf16, int8, int4]
+
+feedback:
+  local_interval: 20
+  e2e_interval: 100
+  default_eout: 0.3
+  target_band: [0.45, 0.55]
+  momentum: 0.9
+  step_size: 0.01
+  complexity_margin: 0.05
+
+training:
+  calibration_dataset: allenai/c4
+  calibration_split: validation
+  calibration_sequences: 2048
+  calibration_context_length: 512
+  auxiliary_dataset: ShareGPT
+  auxiliary_sequences: 512
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  batch_size: 64
+  max_epochs: 3
+  seed: 42
+
+evaluation:
+  datasets: [alpacaeval, vicuna80, hotpotqa, asqa]
+  samples:
+    alpacaeval: 805
+    vicuna80: 80
+    hotpotqa: 405
+    asqa: 948
+  paired_seeds: [11, 22, 33, 44, 55]
+  judge_model: gpt-5.6-sol
+  judge_comparability: current_noncomparable
+  judge_temperature: 0.0
+  judge_max_tokens: 512
+
