@@ -1,0 +1,7 @@
+configuration,latency_ms_per_step,change_percent
+complete_controller,8.32,0.0
+without_cached_anchor_approximation,11.42,37.3
+without_predictive_pruning,9.75,17.2
+without_precision_scheduling,8.91,7.1
+fp16_full_compute_control,12.37,48.7
+

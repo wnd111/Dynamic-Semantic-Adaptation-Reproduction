@@ -1,0 +1,10 @@
+dataset,method,mean,std,ci_lower,ci_upper,pvalue_vs_control
+alpacaeval,full_compute_control,6.75,0.08,6.68,6.82,
+alpacaeval,ours,6.87,0.11,6.77,6.97,0.142
+hotpotqa_rouge_l,full_compute_control,42.0,0.3,41.7,42.3,
+hotpotqa_rouge_l,ours,42.1,0.4,41.7,42.5,0.687
+vicuna80,full_compute_control,7.21,0.09,7.12,7.30,
+vicuna80,ours,7.18,0.12,7.06,7.30,0.721
+asqa_str_em,full_compute_control,47.8,0.5,47.3,48.3,
+asqa_str_em,ours,48.2,0.6,47.6,48.8,0.298
+

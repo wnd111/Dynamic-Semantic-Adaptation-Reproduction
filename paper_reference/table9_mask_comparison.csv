@@ -1,0 +1,6 @@
+method,retained_keys,latency_ms_per_step,rouge_l,judge_score
+random_blocks,per-query matched,9.84,38.7,6.18
+static_entropy,per-query matched,9.21,39.8,6.42
+recency_only,per-query matched,9.45,40.2,6.51
+layer_conditioned_predictor,per-query matched,8.32,42.1,6.87
+
