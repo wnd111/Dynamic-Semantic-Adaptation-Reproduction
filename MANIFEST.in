@@ -1,0 +1,6 @@
+include README.md README_EN.md LICENSE environment-a100.yml requirements-dev.txt
+recursive-include configs *.yaml
+recursive-include data/manifests *.json
+recursive-include docs *.md
+recursive-include paper_reference *.csv *.md
+recursive-include scripts *.py *.sh *.ps1
