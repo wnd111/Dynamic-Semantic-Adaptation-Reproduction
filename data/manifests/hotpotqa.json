@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "name": "hotpotqa",
+  "source_type": "hf_dataset",
+  "source": "hotpotqa/hotpot_qa",
+  "revision": "c36ab274c934496e0e96274d89b1cc271f628af5",
+  "source_url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa",
+  "config": "distractor",
+  "split": "validation",
+  "sample_count": 405,
+  "selection_seed": 42,
+  "selection": "seeded_sample",
+  "required_fields": ["id", "question", "answer", "context"],
+  "license": "CC-BY-SA-4.0",
+  "notes": "The manuscript samples 405 questions from the 7,405-example distractor development split."
+}
+

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "name": "asqa",
+  "source_type": "hf_dataset",
+  "source": "din0s/asqa",
+  "revision": "084060f",
+  "source_url": "https://huggingface.co/datasets/din0s/asqa",
+  "config": null,
+  "split": "dev",
+  "sample_count": 948,
+  "selection_seed": 42,
+  "selection": "all",
+  "required_fields": ["sample_id", "ambiguous_question", "qa_pairs"],
+  "license": "Apache-2.0",
+  "notes": "The manuscript evaluates all 948 examples in the ASQA development split."
+}
+

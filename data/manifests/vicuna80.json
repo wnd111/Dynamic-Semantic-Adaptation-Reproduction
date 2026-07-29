@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "name": "vicuna80",
+  "source_type": "jsonl",
+  "source": "lm-sys/vicuna-blog-eval",
+  "revision": "archived-2023-08-02",
+  "source_url": "https://raw.githubusercontent.com/lm-sys/vicuna-blog-eval/main/eval/table/question.jsonl",
+  "config": null,
+  "split": "all",
+  "sample_count": 80,
+  "selection_seed": 42,
+  "selection": "all",
+  "required_fields": ["question_id", "text"],
+  "license": "Apache-2.0",
+  "notes": "The upstream repository is archived. Exact-match/F1 evaluation requires the supplied reference-answer file because the public question file contains prompts only."
+}
+

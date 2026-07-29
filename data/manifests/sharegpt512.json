@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "name": "sharegpt512",
+  "source_type": "json",
+  "source": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+  "revision": "runtime-content-hash",
+  "source_url": "https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/resolve/main/ShareGPT_V3_unfiltered_cleaned_split.json",
+  "config": null,
+  "split": "train",
+  "sample_count": 512,
+  "selection_seed": 42,
+  "selection": "seeded_sample",
+  "required_fields": ["id", "conversations"],
+  "license": "upstream-dataset-terms-apply",
+  "notes": "Deterministic public proxy because the manuscript does not disclose its exact 512 ShareGPT IDs/revision. Runtime content hashes are authoritative; this must not be described as the authors' exact subset."
+}

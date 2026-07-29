@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "name": "alpacaeval",
+  "source_type": "json",
+  "source": "tatsu-lab/alpaca_eval",
+  "revision": "2955709b93b0e08df511a752a3874b0a89b8910b",
+  "source_url": "https://huggingface.co/datasets/tatsu-lab/alpaca_eval/resolve/2955709b93b0e08df511a752a3874b0a89b8910b/alpaca_eval.json",
+  "config": null,
+  "split": "eval",
+  "sample_count": 805,
+  "selection_seed": 42,
+  "selection": "all",
+  "required_fields": ["instruction"],
+  "license": "CC-BY-NC-4.0",
+  "notes": "The manuscript evaluates all 805 official AlpacaEval prompts with a single response per prompt."
+}
+
